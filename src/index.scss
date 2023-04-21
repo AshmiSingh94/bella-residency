@@ -1,0 +1,22 @@
+@import './assests/styles/mediaqueries.scss';
+@import './assests/styles/variables.scss';
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+html{
+  @include mobile{
+    font-size: 12px;
+    // background-color: $red; 
+  }
+  @include tablet{
+    font-size: 14px; 
+    // background-color: $blue; 
+  }
+  @include desktop{
+    font-size: 16px; 
+    // background-color: $green; 
+  }
+}

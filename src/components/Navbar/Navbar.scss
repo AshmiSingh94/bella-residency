@@ -1,0 +1,40 @@
+@import "../../assests/styles/variables.scss";
+@import "../../assests/styles/mediaqueries.scss";
+
+.Navbar {
+  display: flex;
+  width: 100%;
+  padding: 20px 0;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.27);
+  &__left {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding-left: 30px;
+    gap: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  &__left > :nth-child(2) {
+    color: $primary;
+  }
+
+  &__right {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 30px;
+    justify-content: flex-end;
+    margin-right: 20px;
+    &__items {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+    }
+    &__name {
+      color: $primary;
+      cursor: pointer;
+    }
+  }
+}
