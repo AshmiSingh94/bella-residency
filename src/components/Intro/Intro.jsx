@@ -15,8 +15,6 @@ const Intro = () => {
         </div>
       </div>
       <img src={images} alt="" className="intro__image" />
-      <hr className="intro__hr" />
-      <div className="intro__testimonial">TESTIMONIALS</div>
     </div>
   );
 };
