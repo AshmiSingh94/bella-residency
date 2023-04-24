@@ -7,7 +7,7 @@ import DirectionsIcon from "@mui/icons-material/Directions";
 import EmailIcon from "@mui/icons-material/Email";
 import { pink } from "@mui/material/colors";
 import Sidebar from "../SideBar/sidebar";
-const Navbar = () => {
+const Navbar = (props) => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
     <div className="Navbar">
@@ -31,9 +31,9 @@ const Navbar = () => {
         <span>BELA RESIDENCY</span>
       </div>
       <div className="Navbar__right">
-        <div className="Navbar__right__items">
+        <div className="Navbar__right__items" onClick={props.handleFormOpen}>
           <EmailIcon sx={{ color: pink[500] }} />
-          <span className="Navbar__right__name">Contact Us</span>
+          <span className="Navbar__right__name" >Contact Us</span>
         </div>
         <div className="Navbar__right__items">
           <CallIcon sx={{ color: pink[500] }} />

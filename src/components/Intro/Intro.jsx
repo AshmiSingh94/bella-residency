@@ -1,7 +1,7 @@
 import React from "react";
 import "./Intro.scss";
 import images from "../../assests/images/bellaresidency.png";
-const Intro = () => {
+const Intro = (props) => {
   return (
     <div className="intro">
       <div className="intro__body">
@@ -11,7 +11,7 @@ const Intro = () => {
         </div>
         <div className="intro__body__description">Open 24 hours</div>
         <div className="intro__body__button">
-          <button className="intro__body__button__custom">Contact Us</button>
+          <button className="intro__body__button__custom" onClick={props.handleFormOpen}>Contact Us</button>
         </div>
       </div>
       <img src={images} alt="" className="intro__image" />
