@@ -1,11 +1,11 @@
 .Form {
   &__header {
     position: relative;
-    &__close{
-        position: absolute;
-        right: 15px;
-        top: 20px;
-        cursor: pointer;
+    &__close {
+      position: absolute;
+      right: 15px;
+      top: 20px;
+      cursor: pointer;
     }
   }
   &__content {

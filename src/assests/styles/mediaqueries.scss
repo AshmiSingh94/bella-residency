@@ -4,14 +4,14 @@ $laptop: 1024px;
 
 /* Mixin for mobile devices */
 @mixin mobile {
-  @media only screen and (max-width: #{$mobile - 1px}) {
+  @media only screen and (max-width: #{$mobile}) {
     @content;
   }
 }
 
 /* Mixin for tablet devices */
 @mixin tablet {
-  @media only screen and (min-width: #{$mobile}) and (max-width: #{$laptop - 1px}) {
+  @media only screen and (min-width: #{$mobile+1}) and (max-width: #{$laptop}) {
     @content;
   }
 }

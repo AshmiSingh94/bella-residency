@@ -1,15 +1,25 @@
-.Gallery{
+@import "../../assests/styles/variables.scss";
+@import "../../assests/styles/mediaqueries.scss";
+.Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 0 auto;
+  @include mobile {
+    gap: 1rem;
+  }
+  &__item {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    max-width: 1240px;
-    justify-content: center;
-    margin: 0 auto;
-    &__item{
-        display: flex;
-        flex: 0 0 32%;
-        & img{
-            width: 100%;
+    flex: 0 0 25%;
+    @include mobile{
+        flex: 0 0 41%; 
+        &:last-child{
+            display: none;
         }
     }
+    & img {
+      width: 100%;
+    }
+  }
 }

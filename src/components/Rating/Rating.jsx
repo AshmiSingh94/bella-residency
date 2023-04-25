@@ -33,26 +33,28 @@ const reviews = [
 const Rating = () => {
   return (
     <div className="Reviewslist" id="testimonials">
-      <hr className="Reviewslist__hr" />
-      <div className="Reviewslist__testimonial">TESTIMONIALS</div>
+      <div className="Reviewslist__header">
+        <hr className="Reviewslist__header__hr" />
+        <div className="Reviewslist__header__testimonial">TESTIMONIALS</div>
+      </div>
       <div className="Reviewslist__list">
-      {reviews.map((item) => (
-        <div key={item.id} className="Reviewslist__list__item">
-          <div className="Reviewslist__list__item__rating">
-            <div>
-              {[1, 2, 3, 4, 5].map((item) => (
-                <StarIcon
-                  key={item}
-                  sx={{ color: item <= 5 ? yellow[700] : "" }}
-                />
-              ))}
+        {reviews.map((item) => (
+          <div key={item.id} className="Reviewslist__list__item">
+            <div className="Reviewslist__list__item__rating">
+              <div>
+                {[1, 2, 3, 4, 5].map((item) => (
+                  <StarIcon
+                    key={item}
+                    sx={{ color: item <= 5 ? yellow[700] : "" }}
+                  />
+                ))}
+              </div>
+              <div className="Reviewslist__list__item__time">{item.time}</div>
             </div>
-            <div className="Reviewslist__list__item__time">{item.time}</div>
+            <div className="Reviewslist__list__item__review">{item.review}</div>
+            <div className="Reviewslist__list__item__name">{item.name}</div>
           </div>
-          <div className="Reviewslist__list__item__review">{item.review}</div>
-          <div className="Reviewslist__list__item__name">{item.name}</div>
-        </div>
-      ))}
+        ))}
       </div>
     </div>
   );

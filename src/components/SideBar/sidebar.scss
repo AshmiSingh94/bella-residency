@@ -9,6 +9,9 @@
   background-color: #fff;
   box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.3);
   transition: left 0.3s ease-in-out;
+  @include mobile{
+    top: 59px;
+  }
   &.open {
     left: 0;
   }
