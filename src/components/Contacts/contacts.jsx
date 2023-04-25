@@ -13,9 +13,8 @@ const Contacts = () => {
         <div className="Contacts__details__number">
           <div className="Contacts__details__title">Contacts</div>
           <Button variant="contained" className="Contacts__details__button">Call Now</Button>
-          <div>986-1444108</div>
-          <div>984-1024217</div>
-          <div>984-1560496</div>
+          <div>9843130332</div>
+          <div>9823775159</div>
         </div>
         <div className="Contacts__details__address">
           <div className="Contacts__details__title">Address</div>

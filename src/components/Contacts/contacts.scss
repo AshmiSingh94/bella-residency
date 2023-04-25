@@ -11,6 +11,7 @@
     height: 40rem;
     border: none;
     margin: 3rem 0;
+    width: calc(100% - 20rem);
     @include mobile {
       width: calc(100% - 4rem);
       height: 30rem;
@@ -33,6 +34,7 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+    margin-top: 2rem;
     @include mobile {
       flex-direction: column;
       gap: 2rem;

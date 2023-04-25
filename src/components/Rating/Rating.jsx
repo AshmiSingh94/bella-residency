@@ -6,27 +6,27 @@ import { yellow } from "@mui/material/colors";
 const reviews = [
   {
     id: "f9f11229-f89a-45ac-86bf-0dc4baa028e2",
-    name: "Rhythm B",
+    name: "Preeti Thangunna",
     time: "a year ago",
     rating: 5,
     review:
-      "Great place with super helpful people around . Such a good experience living here. Their Services are so satisfying provided with good food and accommodation",
+      "Amazing experience living here, with great people and satisfying services. Highly recommended for anyone seeking good food and comfortable accommodation.",
   },
   {
     id: "602a9bb8-e100-11ed-b5ea-0242ac120002",
-    name: "Chanda P",
+    name: "Rita Singh",
     time: "a year ago",
     rating: 5,
     review:
-      "I have stayed for about 3 months, Very good pg, hygienic. The best thing is owner of the pg is very friendly, good food too.. The best pg i can say👌",
+      "Great PG, with a hygienic environment, friendly owner, and excellent food. It's definitely the best PG I've stayed in and I would highly recommend it to others.👌",
   },
   {
     id: "67f7ae30-e100-11ed-b5ea-0242ac120002",
-    name: "Manisha N",
+    name: "Kavya Gurang",
     time: "a year ago",
     rating: 5,
     review:
-      "Was my first time staying at banglore, the pg was really good. Good food , and ready to help if there is any issues at pg. Also got back the advance back within a day.",
+      "Exceptional first-time experience in Kathmandu, with delicious food and accommodating hosts. Prompt refund of advance payment. Highly recommend this PG to others.",
   },
 ];
 
