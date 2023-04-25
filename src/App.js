@@ -7,6 +7,7 @@ import Description from "./components/Description/Description";
 import Gallery from "./components/Gallery/Gallery";
 import Contacts from "./components/Contacts/contacts";
 import Form from "./components/Form/form";
+import axios from "axios";
 
 const App = () => {
   const [isOpen, setIsopen] = useState(false);
@@ -19,24 +20,23 @@ const App = () => {
   };
 
   const getQuote = (user) => {
-    handleFormClose()
-    const data={
+    handleFormClose();
+    const data = {
       ...user,
-      date: new Date()
-    }
-    fetch("https://script.google.com/macros/s/AKfycbxlNHYpCaLc3mGAte4G4eMl-KwtdKOnGB4dYvVZlNUVb9hYwpE1Ym-TUC5pzBLjyhoPZQ/exec", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
-      .then((response) => response.json())
-      .then((responseData) => {
-        console.log(responseData);
-        // do something with responseData
+      date: new Date(),
+    };
+
+    axios
+      .post(
+        "https://script.google.com/macros/s/AKfycbxlNHYpCaLc3mGAte4G4eMl-KwtdKOnGB4dYvVZlNUVb9hYwpE1Ym-TUC5pzBLjyhoPZQ/exec",
+        data
+      )
+      .then((response) => {
+        console.log(response);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        console.error(error);
+      });
   };
   return (
     <div className="App">
