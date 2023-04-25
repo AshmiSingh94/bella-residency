@@ -13,7 +13,7 @@ const Description = () => {
           scooters. Our location is serene, yet conveniently located close to
           the city center, making commuting a breeze. We prioritize the safety
           and well-being of our residents, along with their educational and
-          personal growth. Our amenities include a
+          personal growth. Our amenities includes
           <b>solar-heated water supply</b>, <b>laundry service</b>, space for
           gardening, and a swing, creating a <b>homely environment</b> that
           fosters relaxation and rejuvenation. Join us for a peaceful and
